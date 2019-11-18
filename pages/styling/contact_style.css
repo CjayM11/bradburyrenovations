@@ -1,0 +1,152 @@
+/* BODY FOR ENTIRE WEBSITE */
+body{
+    background-image: url("../images/reno2.jpg");
+    background-size: auto;
+    color:rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif,Helvetica;
+    padding:0;
+    margin:0; 
+    background-repeat: no-repeat;  
+}
+.button_bar{
+  background: black;
+  text-align: center;
+  height: 125px;
+}
+
+.cta {
+  position: relative;
+  display: inline-block;
+  margin-top: 27px;
+  width: 135px;
+  height: 55px;
+  font-size: 12px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e0ae77;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif,Helvetica;
+}
+.cta svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+.cta svg rect {
+  stroke: #e0ae77;
+  stroke-width: 3;
+  stroke-dasharray: 322, 0;
+  stroke-dashoffset: 0;
+  transition: all 350ms ease-out;
+}
+
+.cta:hover {
+  color: #e0ae77;
+}
+.cta:hover svg rect {
+  stroke: #e0ae77;
+  stroke-width: 5;
+  stroke-dasharray: 110, 312;
+  stroke-dashoffset: 227;
+}
+
+.cta:active {
+  font-weight: 600;
+}
+.middle_logo{
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../images/logo1.png");
+  background-size: 140px;
+  display:inline-block;
+  width: 150px;
+  height:100px;
+ text-decoration: none;
+ margin: 2px;
+ top:20px;
+
+}
+
+/* contact  infomation*/
+
+
+
+
+.section {
+  position: relative;
+  width: 80%;
+  max-width: 80%;
+  border: 2px solid #e0ae77;
+  border-top: none;
+  text-align: center;
+  margin: 80px auto;
+}
+
+.section h1 {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+
+.top-border{
+  position: absolute;
+  height: 2px;
+  width: 24%;
+  background-color:#e0ae77;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+@media (max-width: 685px) {
+.top-border {	
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 40px auto;
+  line-height: 30px;
+}
+
+@media (max-width: 500px) {
+  .top-border {	
+    display: none;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
+}
+
+.info{
+  background: black;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.info_container{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.555);
+  margin: 3% 3% 5% 5%;
+  padding:1%;
+  
+}
+.container{
+  position: relative;
+  margin-top: 3%;
+  margin-bottom: 3%;
+ padding: 1%s;
+ 
+}
