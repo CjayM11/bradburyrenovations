@@ -1,0 +1,274 @@
+/* BODY OF TESTIMONIAL PAGE */
+
+body{
+  background-image: url("../images/reno2.jpg");
+  background-size: auto;
+  color:white;
+  font-family:Helvetica Neue, Helvetica,Arial;
+  padding:0;
+  margin:0; 
+  background-repeat: no-repeat; 
+  font-family:Arial, Helvetica, sans-serif,Helvetica; 
+  overflow: scroll;
+  /*
+  the background attachment property sticks the background image to its position
+  */
+  background-attachment: fixed;
+  overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+  
+
+}
+
+.scrollable-element {
+  scrollbar-color: white black;
+}
+
+
+
+/* TESTIMONIAL DISPLAY*/
+.button_bar_test{
+    background:black;
+    text-align: center;
+    height: 120px;
+  }
+
+  .button_bar{
+    background: black;
+    text-align: center;
+    height: 125px;
+}
+
+
+  .cta {
+    position: relative;
+    display: inline-block;
+    margin-top: 27px;
+    width: 135px;
+    height: 55px;
+    font-size: 12px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e0ae77;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif,Helvetica;
+  }
+  .cta svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+  }
+  .cta svg rect {
+    stroke: #e0ae77;
+    stroke-width: 3;
+    stroke-dasharray: 322, 0;
+    stroke-dashoffset: 0;
+    transition: all 350ms ease-out;
+  }
+  
+  .cta:hover {
+    color: #e0ae77;
+  }
+  .cta:hover svg rect {
+    stroke: #e0ae77;
+    stroke-width: 5;
+    stroke-dasharray: 110, 312;
+    stroke-dashoffset: 227;
+  }
+  
+  .cta:active {
+    font-weight: 600;
+  }
+  .middle_logo{
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("images/logo1.png");
+    background-size: 140px;
+    display:inline-block;
+    width: 150px;
+    height:100px;
+   text-decoration: none;
+   margin: 2px;
+   top:20px;
+
+  }
+
+  h1 {
+    font-size: 200%; 
+    text-align:center;
+    color: rgb(255, 255, 255);
+  }
+  p {
+    text-align:center;
+    position:relative;
+    top: -20px;
+    
+  }
+
+  #content {
+    max-width: 1100px;
+    height:auto;
+    margin:0 auto;
+    padding:10px;
+  }
+
+  #content, html, body {
+    height: 98%;
+}
+#left {
+    float: left;
+    width: 40%;
+    background:rgba(0, 0, 0, 0.705);
+    height: 720px;
+    overflow: scroll;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+#right {
+    float: right;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.705);
+    height: 720px;
+    overflow: scroll;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#left::-webkit-scrollbar,
+#right::-webkit-scrollbar {
+    display: none;
+}
+
+.list{
+  list-style-type:none;
+}
+
+.list li{
+  border-bottom:1px solid rgba(255, 255, 255, 0.315);
+
+}
+
+.list li p {
+  margin: 0;
+  padding: 0;
+ font-size: 15px;
+ text-align: center;
+}
+
+.list h4{
+  text-align: center;
+ 
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+ 
+ .container {
+	 width: 1200px;
+	 margin: 0 auto;
+	 display: inline;
+	 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	 grid-gap: 20px;
+	 box-sizing: border-box;
+	 padding: 20px;
+}
+ .container .box {
+	 position: relative;
+	 padding: 80px 40px 40px;
+	 transition: 0.5s;
+	 text-align: center;
+   background: rgb(87, 86, 86);
+   margin: 45px;
+}
+ .container .box:hover {
+	 background: #e0ae77;
+}
+ .container .box p {
+	 margin: 0;
+	 padding: 0;
+	 transition: 0.5s;
+}
+ .container .box h4 {
+	 margin: 20px 0 0;
+	 padding: 0;
+	 transition: 0.5s;
+	 font-weight: 700;
+	 font-size: 18px;
+	 line-height: 20px;
+	 color: #030303;
+}
+ .container .box h4 span {
+	 font-weight: 600;
+	 font-size: 14px;
+	 color: #080808;
+	 transition: 0.5s;
+}
+ .container .box:hover p, .container .box:hover h4, .container .box:hover h4 span {
+	 color: rgb(0, 0, 0);
+}
+ .container .box .imgBox {
+	 position: absolute;
+	 width: 120px;
+	 height: 120px;
+	 overflow: hidden;
+	 top: -60px;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 border-radius: 50%;
+}
+ .container .box .imgBox img {
+	 width: 100%;
+}
+ .container .box::before {
+	 content: '';
+	 position: absolute;
+	 top: 20px;
+	 left: 40px;
+	 width: 80px;
+	 height: 80px;
+	 background: url("../images/q.png");
+	 background-size: cover;
+	 opacity: 0.05;
+	 transition: 0.5s;
+	 pointer-events: none;
+}
+ .container .box:hover::before {
+	 opacity: 1;
+	 transform: translateY(-60px);
+}
+ .container .box::after {
+	 content: '';
+	 position: absolute;
+	 bottom: 20px;
+	 right: 40px;
+	 width: 80px;
+	 height: 80px;
+	 background: url("../images/q.png");
+	 background-size: cover;
+	 opacity: 0.05;
+	 transition: 0.5s;
+	 pointer-events: none;
+	 transform: rotate(180deg) translateY(0);
+}
+ .container .box:hover::after {
+	 opacity: 1;
+	 transform: rotate(180deg) translateY(-60px);
+}
+ @media (max-width: 768px) {
+	 .container .box {
+		 margin-top: 80px;
+	}
+}
+
+.list h4 {
+  margin-bottom:6% !important;
+}
+
+
+ 
